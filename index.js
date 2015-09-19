@@ -165,6 +165,14 @@ module.exports = function (graph, settings) {
       return this;
     },
 
+    getLinkUI: function (linkId) {
+      return linkUI[linkId];
+    },
+
+    getNodeUI: function (nodeId) {
+      return nodeUI[nodeId];
+    },
+
     /**
      * Tries to get node at (x, y) graph coordinates. By default renderer assumes
      * width and height of the node is 10 pixels. But if your createNodeUICallback
