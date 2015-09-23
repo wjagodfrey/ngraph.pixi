@@ -31,7 +31,7 @@ module.exports = function (graph, settings) {
     var createLayout = require('ngraph.forcelayout'),
         physics = require('ngraph.physics.simulator');
 
-    layout = createLayout(graph, physics(settings.physics));
+    layout = createLayout(graph, settings.physics);
   }
 
   var width = settings.container.clientWidth,
